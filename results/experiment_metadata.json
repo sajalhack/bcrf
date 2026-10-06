@@ -1,0 +1,95 @@
+{
+  "experiment_name": "BCRF_Validation",
+  "timestamp": "2026-09-14T00:26:10.537620",
+  "seed": 42,
+  "python_version": "3.11.5 (v3.11.5:cce6ba91b3, Aug 24 2023, 10:50:31) [Clang 13.0.0 (clang-1300.0.29.30)]",
+  "state_sizes": [
+    25,
+    50,
+    100,
+    250,
+    500
+  ],
+  "num_trials": 30,
+  "fault_rate": 0.1,
+  "quick_mode": false,
+  "platform": "macOS-26.5.2-arm64-arm-64bit",
+  "config": {
+    "experiment": {
+      "name": "BCRF_Validation",
+      "description": "Bidirectional Causal Repair Frontier - Experimental Validation",
+      "version": "1.0.0",
+      "default_seed": 42
+    },
+    "agent": {
+      "state_sizes": [
+        25,
+        50,
+        100,
+        250,
+        500
+      ],
+      "num_trials": 30,
+      "quick_trials": 5,
+      "quick_state_sizes": [
+        25,
+        50,
+        100
+      ]
+    },
+    "fault_injection": {
+      "default_fault_rate": 0.1,
+      "fault_types": [
+        "memory_corruption",
+        "planning_corruption",
+        "tool_corruption",
+        "dependency_corruption",
+        "metadata_corruption",
+        "combined_corruption"
+      ],
+      "default_fault_type": "memory_corruption"
+    },
+    "bcrf": {
+      "fci_threshold_type": "percentile",
+      "fci_threshold_value": 0.6,
+      "bcr_threshold_type": "percentile",
+      "bcr_threshold_value": 0.5,
+      "civ_weights": {
+        "w1": 0.4,
+        "w2": 0.35,
+        "w3": 0.25
+      },
+      "civ_threshold": 0.65,
+      "max_recovery_iterations": 5,
+      "crf_expansion_factor": 0.15
+    },
+    "baselines": {
+      "checkpoint_interval": 10
+    },
+    "visualization": {
+      "dpi": 300,
+      "figure_format": [
+        "png",
+        "pdf"
+      ],
+      "style": "publication"
+    },
+    "output": {
+      "results_dir": "results",
+      "raw_dir": "results/raw",
+      "processed_dir": "results/processed",
+      "figures_dir": "results/figures",
+      "tables_dir": "results/tables",
+      "reports_dir": "results/reports"
+    }
+  },
+  "package_versions": {
+    "numpy": "1.26.4",
+    "pandas": "2.2.2",
+    "scipy": "1.13.1",
+    "matplotlib": "3.9.1",
+    "networkx": "3.5",
+    "psutil": "7.0.0"
+  },
+  "total_runtime_seconds": 212.8
+}

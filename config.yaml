@@ -1,0 +1,61 @@
+# BCRF Experiment Configuration
+experiment:
+  name: "BCRF_Validation"
+  description: "Bidirectional Causal Repair Frontier - Experimental Validation"
+  version: "1.0.0"
+  default_seed: 42
+
+agent:
+  # State sizes for scalability experiments
+  state_sizes: [25, 50, 100, 250, 500]
+  # Number of independent trials per configuration
+  num_trials: 30
+  # Quick mode trials
+  quick_trials: 5
+  # Quick mode state sizes
+  quick_state_sizes: [25, 50, 100]
+
+fault_injection:
+  default_fault_rate: 0.1
+  fault_types:
+    - memory_corruption
+    - planning_corruption
+    - tool_corruption
+    - dependency_corruption
+    - metadata_corruption
+    - combined_corruption
+  default_fault_type: memory_corruption
+
+bcrf:
+  # FCI threshold (percentile-based by default)
+  fci_threshold_type: percentile  # fixed, percentile, adaptive
+  fci_threshold_value: 0.6        # if fixed: raw value; if percentile: fraction (0-1)
+  # BCR threshold
+  bcr_threshold_type: percentile
+  bcr_threshold_value: 0.5
+  # CIV weights and threshold
+  civ_weights:
+    w1: 0.4   # outcome consistency
+    w2: 0.35  # integrity consistency
+    w3: 0.25  # causal consistency
+  civ_threshold: 0.65
+  # Max CRF expansion iterations
+  max_recovery_iterations: 5
+  # CRF expansion factor per iteration
+  crf_expansion_factor: 0.15
+
+baselines:
+  checkpoint_interval: 10   # every N states create a checkpoint
+
+visualization:
+  dpi: 300
+  figure_format: ["png", "pdf"]
+  style: "publication"
+
+output:
+  results_dir: "results"
+  raw_dir: "results/raw"
+  processed_dir: "results/processed"
+  figures_dir: "results/figures"
+  tables_dir: "results/tables"
+  reports_dir: "results/reports"

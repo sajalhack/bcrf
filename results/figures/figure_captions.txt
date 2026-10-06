@@ -1,0 +1,64 @@
+BCRF Experimental Validation — Patent-Ready Figure Captions
+============================================================
+
+FIG1_recovery_success_comparison
+Caption: "Comparison of recovery success rates among baseline recovery mechanisms
+(Full Rollback, Checkpoint-Based, and Dependency-Guided) and the proposed BCRF
+framework, measured across all experimental trials. Error bars represent 95%
+confidence intervals."
+
+FIG2_recovery_latency_vs_states
+Caption: "Recovery latency as a function of execution-state count for all four
+evaluated methods. BCRF selective reconstruction limits the growth of recovery
+cost as state count increases."
+
+FIG3_reconstructed_states
+Caption: "Absolute number of states reconstructed by each recovery method across
+varying execution lengths. BCRF selectively reconstructs only causally relevant
+states identified by the Causal Repair Frontier."
+
+FIG4_reconstruction_percentage
+Caption: "Relative recovery scope of the evaluated recovery mechanisms, expressed
+as the percentage of total execution states requiring reconstruction."
+
+FIG5_duplicate_side_effects
+Caption: "Effect of the External Operation Registry-based non-replay control on
+duplicate side-effect-producing operations. BCRF with the registry enabled
+prevents re-execution of already-completed external operations during recovery."
+
+FIG6_causal_repair_frontier
+Caption: "Example formation of the Causal Repair Frontier through bidirectional
+causal analysis. Black nodes indicate states selected for reconstruction; the
+non-contiguous nature of the CRF demonstrates that causally irrelevant
+intermediate states are excluded from recovery."
+
+FIG7_fci_bcr_scatter
+Caption: "Bidirectional causal state selection using Forward Counterfactual
+Influence (FCI) and Backward Causal Responsibility (BCR). States in the upper-right
+quadrant (above T_F and T_B threshold lines) are selected into the Causal Repair
+Frontier."
+
+FIG8_ablation_study
+Caption: "Ablation analysis of major BCRF components. Each bar corresponds to a
+variant with one component removed relative to the full BCRF configuration,
+demonstrating the contribution of each component to overall recovery effectiveness."
+
+FIG9_civ_validation
+Caption: "Counterfactual Integrity Validation (CIV) scores for individual recovery
+attempts. The dashed line indicates the CIV acceptance threshold; attempts below
+the threshold trigger CRF expansion and additional reconstruction."
+
+FIG10_recovery_iterations
+Caption: "Closed-loop recovery progression showing CIV score evolution across
+iterative Causal Repair Frontier expansion steps. The mean CIV score and 95%
+confidence band are shown; recovery terminates when CIV exceeds the threshold."
+
+FIG11_scalability
+Caption: "Scalability of recovery methods expressed as recovery time versus
+execution-state count. BCRF computational cost grows more slowly than full
+rollback/replay as state count increases."
+
+FIG12_fault_robustness
+Caption: "Recovery success rate of all evaluated methods across six fault types:
+memory corruption, planning corruption, tool-output corruption, dependency
+corruption, metadata corruption, and combined corruption."

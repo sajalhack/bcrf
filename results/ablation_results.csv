@@ -1,0 +1,181 @@
+condition,label,seed,num_states,bcrf_success,bcrf_states_reconstructed,bcrf_pct_reconstructed,bcrf_civ_score,bcrf_recovery_time_ms,bcrf_recovery_iterations,bcrf_duplicate_side_effects,bcrf_external_ops_prevented
+full_bcrf,Full BCRF,7819,50,1,23,46.0,0.895,2.066,1,0,12
+full_bcrf,Full BCRF,8816,50,1,24,48.0,0.895,1.853,1,0,11
+full_bcrf,Full BCRF,9813,50,1,22,44.0,0.895,1.983,1,0,10
+full_bcrf,Full BCRF,10810,50,1,24,48.0,0.895,1.811,1,0,14
+full_bcrf,Full BCRF,11807,50,1,23,46.0,0.895,2.716,1,0,10
+full_bcrf,Full BCRF,12804,50,1,23,46.0,0.895,4.319,1,0,13
+full_bcrf,Full BCRF,13801,50,1,22,44.0,0.895,3.67,1,0,13
+full_bcrf,Full BCRF,14798,50,1,24,48.0,0.895,3.16,1,0,14
+full_bcrf,Full BCRF,15795,50,1,24,48.0,0.895,3.531,1,0,13
+full_bcrf,Full BCRF,16792,50,1,23,46.0,0.895,1.765,1,0,13
+full_bcrf,Full BCRF,17789,50,1,23,46.0,0.895,3.201,1,0,13
+full_bcrf,Full BCRF,18786,50,1,23,46.0,0.895,2.216,1,0,12
+full_bcrf,Full BCRF,19783,50,1,23,46.0,0.895,1.963,1,0,11
+full_bcrf,Full BCRF,20780,50,1,22,44.0,0.895,2.048,1,0,11
+full_bcrf,Full BCRF,21777,50,1,23,46.0,0.895,2.927,1,0,13
+full_bcrf,Full BCRF,22774,50,1,23,46.0,0.895,2.417,1,0,8
+full_bcrf,Full BCRF,23771,50,1,15,30.0,0.895,5.943,1,0,7
+full_bcrf,Full BCRF,24768,50,1,18,36.0,0.895,5.034,1,0,9
+full_bcrf,Full BCRF,25765,50,1,22,44.0,0.899773,2.148,1,0,12
+full_bcrf,Full BCRF,26762,50,1,13,26.0,0.895,4.808,1,0,7
+full_bcrf,Full BCRF,27759,50,1,21,42.0,0.895,3.979,1,0,12
+full_bcrf,Full BCRF,28756,50,1,24,48.0,0.895,2.591,1,0,12
+full_bcrf,Full BCRF,29753,50,1,24,48.0,0.895,3.8,1,0,14
+full_bcrf,Full BCRF,30750,50,1,23,46.0,0.895,4.266,1,0,9
+full_bcrf,Full BCRF,31747,50,1,22,44.0,0.895,4.71,1,0,11
+full_bcrf,Full BCRF,32744,50,1,23,46.0,0.895,1.907,1,0,13
+full_bcrf,Full BCRF,33741,50,1,24,48.0,0.899375,3.557,1,0,13
+full_bcrf,Full BCRF,34738,50,1,22,44.0,0.895,1.955,1,0,10
+full_bcrf,Full BCRF,35735,50,1,23,46.0,0.895,3.045,1,0,10
+full_bcrf,Full BCRF,36732,50,1,22,44.0,0.895,1.743,1,0,10
+no_fci,Without FCI,7819,50,1,49,98.0,0.897143,2.492,1,0,15
+no_fci,Without FCI,8816,50,1,48,96.0,0.897188,2.397,1,0,15
+no_fci,Without FCI,9813,50,1,32,64.0,0.898281,1.784,1,0,10
+no_fci,Without FCI,10810,50,1,43,86.0,0.897442,2.039,1,0,15
+no_fci,Without FCI,11807,50,1,31,62.0,0.898387,2.36,1,0,10
+no_fci,Without FCI,12804,50,1,47,94.0,0.897234,5.84,1,0,15
+no_fci,Without FCI,13801,50,1,46,92.0,0.897283,3.894,1,0,15
+no_fci,Without FCI,14798,50,1,48,96.0,0.897188,3.197,1,0,15
+no_fci,Without FCI,15795,50,1,49,98.0,0.897143,4.025,1,0,15
+no_fci,Without FCI,16792,50,1,40,80.0,0.897625,1.978,1,0,14
+no_fci,Without FCI,17789,50,1,43,86.0,0.897442,3.481,1,0,15
+no_fci,Without FCI,18786,50,1,49,98.0,0.897143,2.921,1,0,15
+no_fci,Without FCI,19783,50,1,40,80.0,0.897625,2.08,1,0,14
+no_fci,Without FCI,20780,50,1,50,100.0,0.8971,2.564,1,0,15
+no_fci,Without FCI,21777,50,1,50,100.0,0.8971,3.304,1,0,15
+no_fci,Without FCI,22774,50,1,35,70.0,0.898,2.434,1,0,10
+no_fci,Without FCI,23771,50,1,28,56.0,0.89875,6.567,1,0,8
+no_fci,Without FCI,24768,50,1,28,56.0,0.89875,4.459,1,0,9
+no_fci,Without FCI,25765,50,1,39,78.0,0.897692,2.112,1,0,13
+no_fci,Without FCI,26762,50,1,28,56.0,0.89875,4.811,1,0,9
+no_fci,Without FCI,27759,50,1,47,94.0,0.897234,4.32,1,0,15
+no_fci,Without FCI,28756,50,1,50,100.0,0.8971,2.973,1,0,15
+no_fci,Without FCI,29753,50,1,45,90.0,0.897333,3.919,1,0,15
+no_fci,Without FCI,30750,50,1,36,72.0,0.897917,4.429,1,0,10
+no_fci,Without FCI,31747,50,1,39,78.0,0.897692,4.35,1,0,13
+no_fci,Without FCI,32744,50,1,50,100.0,0.8971,2.43,1,0,15
+no_fci,Without FCI,33741,50,1,50,100.0,0.8971,3.843,1,0,15
+no_fci,Without FCI,34738,50,1,36,72.0,0.897917,1.994,1,0,10
+no_fci,Without FCI,35735,50,1,47,94.0,0.897234,3.628,1,0,15
+no_fci,Without FCI,36732,50,1,42,84.0,0.8975,5.058,1,0,15
+no_bcr,Without BCR,7819,50,1,23,46.0,0.895,4.67,1,0,12
+no_bcr,Without BCR,8816,50,1,24,48.0,0.895,2.556,1,0,11
+no_bcr,Without BCR,9813,50,1,22,44.0,0.895,1.693,1,0,10
+no_bcr,Without BCR,10810,50,1,24,48.0,0.895,1.921,1,0,14
+no_bcr,Without BCR,11807,50,1,23,46.0,0.895,2.521,1,0,10
+no_bcr,Without BCR,12804,50,1,23,46.0,0.895,1.878,1,0,13
+no_bcr,Without BCR,13801,50,1,22,44.0,0.895,1.749,1,0,13
+no_bcr,Without BCR,14798,50,1,24,48.0,0.895,2.149,1,0,14
+no_bcr,Without BCR,15795,50,1,24,48.0,0.895,1.935,1,0,13
+no_bcr,Without BCR,16792,50,1,23,46.0,0.895,4.47,1,0,13
+no_bcr,Without BCR,17789,50,1,23,46.0,0.895,5.254,1,0,13
+no_bcr,Without BCR,18786,50,1,23,46.0,0.895,1.812,1,0,12
+no_bcr,Without BCR,19783,50,1,23,46.0,0.895,1.894,1,0,11
+no_bcr,Without BCR,20780,50,1,22,44.0,0.895,1.872,1,0,11
+no_bcr,Without BCR,21777,50,1,23,46.0,0.895,1.874,1,0,13
+no_bcr,Without BCR,22774,50,1,23,46.0,0.895,1.856,1,0,8
+no_bcr,Without BCR,23771,50,1,23,46.0,0.895,2.335,1,0,12
+no_bcr,Without BCR,24768,50,1,23,46.0,0.895,1.91,1,0,10
+no_bcr,Without BCR,25765,50,1,22,44.0,0.899773,1.888,1,0,12
+no_bcr,Without BCR,26762,50,1,24,48.0,0.895,2.263,1,0,11
+no_bcr,Without BCR,27759,50,1,21,42.0,0.895,1.849,1,0,12
+no_bcr,Without BCR,28756,50,1,24,48.0,0.895,1.944,1,0,12
+no_bcr,Without BCR,29753,50,1,24,48.0,0.895,2.353,1,0,14
+no_bcr,Without BCR,30750,50,1,23,46.0,0.895,1.737,1,0,9
+no_bcr,Without BCR,31747,50,1,22,44.0,0.895,1.769,1,0,11
+no_bcr,Without BCR,32744,50,1,23,46.0,0.895,1.857,1,0,13
+no_bcr,Without BCR,33741,50,1,24,48.0,0.899375,1.949,1,0,13
+no_bcr,Without BCR,34738,50,1,22,44.0,0.895,1.763,1,0,10
+no_bcr,Without BCR,35735,50,1,23,46.0,0.895,1.931,1,0,10
+no_bcr,Without BCR,36732,50,1,22,44.0,0.895,1.798,1,0,10
+no_registry,Without Registry,7819,50,1,23,46.0,0.895,2.359,1,0,0
+no_registry,Without Registry,8816,50,1,24,48.0,0.895,2.141,1,0,0
+no_registry,Without Registry,9813,50,1,22,44.0,0.895,3.346,1,0,0
+no_registry,Without Registry,10810,50,1,24,48.0,0.895,1.855,1,0,0
+no_registry,Without Registry,11807,50,1,23,46.0,0.895,2.573,1,0,0
+no_registry,Without Registry,12804,50,1,23,46.0,0.895,4.351,1,0,0
+no_registry,Without Registry,13801,50,1,22,44.0,0.895,3.462,1,0,0
+no_registry,Without Registry,14798,50,1,24,48.0,0.895,2.748,1,0,0
+no_registry,Without Registry,15795,50,1,24,48.0,0.895,4.525,1,0,0
+no_registry,Without Registry,16792,50,1,23,46.0,0.895,3.002,1,0,0
+no_registry,Without Registry,17789,50,1,23,46.0,0.895,7.041,1,0,0
+no_registry,Without Registry,18786,50,1,23,46.0,0.895,2.553,1,0,0
+no_registry,Without Registry,19783,50,1,23,46.0,0.895,2.067,1,0,0
+no_registry,Without Registry,20780,50,1,22,44.0,0.895,2.318,1,0,0
+no_registry,Without Registry,21777,50,1,23,46.0,0.895,2.924,1,0,0
+no_registry,Without Registry,22774,50,1,23,46.0,0.895,2.598,1,0,0
+no_registry,Without Registry,23771,50,1,15,30.0,0.895,6.891,1,0,0
+no_registry,Without Registry,24768,50,1,18,36.0,0.895,6.852,1,0,0
+no_registry,Without Registry,25765,50,1,22,44.0,0.899773,2.199,1,0,0
+no_registry,Without Registry,26762,50,1,13,26.0,0.895,5.222,1,0,0
+no_registry,Without Registry,27759,50,1,21,42.0,0.895,3.842,1,0,0
+no_registry,Without Registry,28756,50,1,24,48.0,0.895,2.259,1,0,0
+no_registry,Without Registry,29753,50,1,24,48.0,0.895,3.819,1,0,0
+no_registry,Without Registry,30750,50,1,23,46.0,0.895,4.389,1,0,0
+no_registry,Without Registry,31747,50,1,22,44.0,0.895,4.307,1,0,0
+no_registry,Without Registry,32744,50,1,23,46.0,0.895,2.027,1,0,0
+no_registry,Without Registry,33741,50,1,24,48.0,0.899375,3.433,1,0,0
+no_registry,Without Registry,34738,50,1,22,44.0,0.895,1.752,1,0,0
+no_registry,Without Registry,35735,50,1,23,46.0,0.895,3.243,1,0,0
+no_registry,Without Registry,36732,50,1,22,44.0,0.895,1.875,1,0,0
+no_civ,Without CIV,7819,50,1,23,46.0,1.0,1.715,1,0,12
+no_civ,Without CIV,8816,50,1,24,48.0,1.0,1.661,1,0,11
+no_civ,Without CIV,9813,50,1,22,44.0,1.0,2.318,1,0,10
+no_civ,Without CIV,10810,50,1,24,48.0,1.0,1.663,1,0,14
+no_civ,Without CIV,11807,50,1,23,46.0,1.0,2.294,1,0,10
+no_civ,Without CIV,12804,50,1,23,46.0,1.0,4.089,1,0,13
+no_civ,Without CIV,13801,50,1,22,44.0,1.0,3.529,1,0,13
+no_civ,Without CIV,14798,50,1,24,48.0,1.0,2.315,1,0,14
+no_civ,Without CIV,15795,50,1,24,48.0,1.0,3.618,1,0,13
+no_civ,Without CIV,16792,50,1,23,46.0,1.0,1.516,1,0,13
+no_civ,Without CIV,17789,50,1,23,46.0,1.0,3.111,1,0,13
+no_civ,Without CIV,18786,50,1,23,46.0,1.0,1.863,1,0,12
+no_civ,Without CIV,19783,50,1,23,46.0,1.0,1.588,1,0,11
+no_civ,Without CIV,20780,50,1,22,44.0,1.0,1.645,1,0,11
+no_civ,Without CIV,21777,50,1,23,46.0,1.0,2.894,1,0,13
+no_civ,Without CIV,22774,50,1,23,46.0,1.0,2.125,1,0,8
+no_civ,Without CIV,23771,50,1,15,30.0,1.0,5.688,1,0,7
+no_civ,Without CIV,24768,50,1,18,36.0,1.0,4.592,1,0,9
+no_civ,Without CIV,25765,50,1,22,44.0,1.0,1.743,1,0,12
+no_civ,Without CIV,26762,50,1,13,26.0,1.0,4.567,1,0,7
+no_civ,Without CIV,27759,50,1,21,42.0,1.0,3.458,1,0,12
+no_civ,Without CIV,28756,50,1,24,48.0,1.0,2.046,1,0,12
+no_civ,Without CIV,29753,50,1,24,48.0,1.0,3.214,1,0,14
+no_civ,Without CIV,30750,50,1,23,46.0,1.0,4.061,1,0,9
+no_civ,Without CIV,31747,50,1,22,44.0,1.0,4.159,1,0,11
+no_civ,Without CIV,32744,50,1,23,46.0,1.0,1.707,1,0,13
+no_civ,Without CIV,33741,50,1,24,48.0,1.0,3.025,1,0,13
+no_civ,Without CIV,34738,50,1,22,44.0,1.0,1.598,1,0,10
+no_civ,Without CIV,35735,50,1,23,46.0,1.0,2.709,1,0,10
+no_civ,Without CIV,36732,50,1,22,44.0,1.0,1.676,1,0,10
+no_expansion,Without CRF Expansion,7819,50,1,23,46.0,0.895,2.133,1,0,12
+no_expansion,Without CRF Expansion,8816,50,1,24,48.0,0.895,2.151,1,0,11
+no_expansion,Without CRF Expansion,9813,50,1,22,44.0,0.895,1.933,1,0,10
+no_expansion,Without CRF Expansion,10810,50,1,24,48.0,0.895,2.025,1,0,14
+no_expansion,Without CRF Expansion,11807,50,1,23,46.0,0.895,3.852,1,0,10
+no_expansion,Without CRF Expansion,12804,50,1,23,46.0,0.895,4.642,1,0,13
+no_expansion,Without CRF Expansion,13801,50,1,22,44.0,0.895,3.383,1,0,13
+no_expansion,Without CRF Expansion,14798,50,1,24,48.0,0.895,2.95,1,0,14
+no_expansion,Without CRF Expansion,15795,50,1,24,48.0,0.895,3.795,1,0,13
+no_expansion,Without CRF Expansion,16792,50,1,23,46.0,0.895,2.148,1,0,13
+no_expansion,Without CRF Expansion,17789,50,1,23,46.0,0.895,3.312,1,0,13
+no_expansion,Without CRF Expansion,18786,50,1,23,46.0,0.895,2.545,1,0,12
+no_expansion,Without CRF Expansion,19783,50,1,23,46.0,0.895,2.001,1,0,11
+no_expansion,Without CRF Expansion,20780,50,1,22,44.0,0.895,2.112,1,0,11
+no_expansion,Without CRF Expansion,21777,50,1,23,46.0,0.895,2.807,1,0,13
+no_expansion,Without CRF Expansion,22774,50,1,23,46.0,0.895,2.684,1,0,8
+no_expansion,Without CRF Expansion,23771,50,1,15,30.0,0.895,7.184,1,0,7
+no_expansion,Without CRF Expansion,24768,50,1,18,36.0,0.895,5.137,1,0,9
+no_expansion,Without CRF Expansion,25765,50,1,22,44.0,0.899773,2.511,1,0,12
+no_expansion,Without CRF Expansion,26762,50,1,13,26.0,0.895,5.836,1,0,7
+no_expansion,Without CRF Expansion,27759,50,1,21,42.0,0.895,4.019,1,0,12
+no_expansion,Without CRF Expansion,28756,50,1,24,48.0,0.895,2.743,1,0,12
+no_expansion,Without CRF Expansion,29753,50,1,24,48.0,0.895,4.599,1,0,14
+no_expansion,Without CRF Expansion,30750,50,1,23,46.0,0.895,4.372,1,0,9
+no_expansion,Without CRF Expansion,31747,50,1,22,44.0,0.895,4.357,1,0,11
+no_expansion,Without CRF Expansion,32744,50,1,23,46.0,0.895,1.943,1,0,13
+no_expansion,Without CRF Expansion,33741,50,1,24,48.0,0.899375,3.595,1,0,13
+no_expansion,Without CRF Expansion,34738,50,1,22,44.0,0.895,2.831,1,0,10
+no_expansion,Without CRF Expansion,35735,50,1,23,46.0,0.895,3.198,1,0,10
+no_expansion,Without CRF Expansion,36732,50,1,22,44.0,0.895,2.111,1,0,10

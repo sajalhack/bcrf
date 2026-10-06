@@ -1,0 +1,638 @@
+{
+  "recovery_time_ms": {
+    "metric": "recovery_time_ms",
+    "methods": {
+      "full_rollback": {
+        "mean": 13.758743,
+        "median": 3.369,
+        "std": 21.816066,
+        "min": 0.404,
+        "max": 109.844,
+        "ci_lower": 12.009592,
+        "ci_upper": 15.507894,
+        "n": 600
+      },
+      "checkpoint": {
+        "mean": 0.023885,
+        "median": 0.012,
+        "std": 0.024728,
+        "min": 0.003,
+        "max": 0.162,
+        "ci_lower": 0.021902,
+        "ci_upper": 0.025868,
+        "n": 600
+      },
+      "dependency": {
+        "mean": 0.858588,
+        "median": 0.146,
+        "std": 1.260237,
+        "min": 0.008,
+        "max": 7.554,
+        "ci_lower": 0.757546,
+        "ci_upper": 0.959631,
+        "n": 600
+      },
+      "bcrf": {
+        "mean": 54.287063,
+        "median": 11.807,
+        "std": 94.886907,
+        "min": 0.771,
+        "max": 529.277,
+        "ci_lower": 46.679297,
+        "ci_upper": 61.89483,
+        "n": 600
+      }
+    },
+    "pairwise_tests": {
+      "bcrf_vs_full_rollback": {
+        "welch_t": {
+          "statistic": 10.196293,
+          "p_value": 0.0,
+          "significant": "True",
+          "test": "welch_t",
+          "reason": "two_independent_samples_potentially_unequal_variance"
+        },
+        "mann_whitney": {
+          "statistic": 252729.0,
+          "p_value": 0.0,
+          "significant": "True",
+          "test": "mann_whitney",
+          "reason": "non_parametric_two_sample_comparison"
+        },
+        "cohens_d": 0.588683
+      },
+      "bcrf_vs_checkpoint": {
+        "welch_t": {
+          "statistic": 14.007949,
+          "p_value": 0.0,
+          "significant": "True",
+          "test": "welch_t",
+          "reason": "two_independent_samples_potentially_unequal_variance"
+        },
+        "mann_whitney": {
+          "statistic": 360000.0,
+          "p_value": 0.0,
+          "significant": "True",
+          "test": "mann_whitney",
+          "reason": "non_parametric_two_sample_comparison"
+        },
+        "cohens_d": 0.808749
+      },
+      "bcrf_vs_dependency": {
+        "welch_t": {
+          "statistic": 13.791256,
+          "p_value": 0.0,
+          "significant": "True",
+          "test": "welch_t",
+          "reason": "two_independent_samples_potentially_unequal_variance"
+        },
+        "mann_whitney": {
+          "statistic": 342931.5,
+          "p_value": 0.0,
+          "significant": "True",
+          "test": "mann_whitney",
+          "reason": "non_parametric_two_sample_comparison"
+        },
+        "cohens_d": 0.796239
+      }
+    },
+    "kruskal_wallis": {
+      "statistic": 1730.739182,
+      "p_value": 0.0,
+      "significant": "True",
+      "test": "kruskal_wallis",
+      "reason": "multi_group_non_parametric_comparison",
+      "n_groups": 4
+    }
+  },
+  "states_reconstructed": {
+    "metric": "states_reconstructed",
+    "methods": {
+      "full_rollback": {
+        "mean": 185.0,
+        "median": 100.0,
+        "std": 175.930628,
+        "min": 25.0,
+        "max": 500.0,
+        "ci_lower": 170.894375,
+        "ci_upper": 199.105625,
+        "n": 600
+      },
+      "checkpoint": {
+        "mean": 178.066667,
+        "median": 100.0,
+        "std": 175.577071,
+        "min": 5.0,
+        "max": 500.0,
+        "ci_lower": 163.989389,
+        "ci_upper": 192.143944,
+        "n": 600
+      },
+      "dependency": {
+        "mean": 176.373333,
+        "median": 94.0,
+        "std": 175.071254,
+        "min": 7.0,
+        "max": 500.0,
+        "ci_lower": 162.336611,
+        "ci_upper": 190.410056,
+        "n": 600
+      },
+      "bcrf": {
+        "mean": 87.811667,
+        "median": 48.0,
+        "std": 84.807705,
+        "min": 3.0,
+        "max": 249.0,
+        "ci_lower": 81.012023,
+        "ci_upper": 94.611311,
+        "n": 600
+      }
+    },
+    "pairwise_tests": {
+      "bcrf_vs_full_rollback": {
+        "welch_t": {
+          "statistic": -12.189251,
+          "p_value": 0.0,
+          "significant": "True",
+          "test": "welch_t",
+          "reason": "two_independent_samples_potentially_unequal_variance"
+        },
+        "mann_whitney": {
+          "statistic": 101520.0,
+          "p_value": 0.0,
+          "significant": "True",
+          "test": "mann_whitney",
+          "reason": "non_parametric_two_sample_comparison"
+        },
+        "cohens_d": -0.703747
+      },
+      "bcrf_vs_checkpoint": {
+        "welch_t": {
+          "statistic": -11.338166,
+          "p_value": 0.0,
+          "significant": "True",
+          "test": "welch_t",
+          "reason": "two_independent_samples_potentially_unequal_variance"
+        },
+        "mann_whitney": {
+          "statistic": 121452.0,
+          "p_value": 0.0,
+          "significant": "True",
+          "test": "mann_whitney",
+          "reason": "non_parametric_two_sample_comparison"
+        },
+        "cohens_d": -0.654609
+      },
+      "bcrf_vs_dependency": {
+        "welch_t": {
+          "statistic": -11.151485,
+          "p_value": 0.0,
+          "significant": "True",
+          "test": "welch_t",
+          "reason": "two_independent_samples_potentially_unequal_variance"
+        },
+        "mann_whitney": {
+          "statistic": 130452.0,
+          "p_value": 0.0,
+          "significant": "True",
+          "test": "mann_whitney",
+          "reason": "non_parametric_two_sample_comparison"
+        },
+        "cohens_d": -0.643831
+      }
+    },
+    "kruskal_wallis": {
+      "statistic": 188.19906,
+      "p_value": 0.0,
+      "significant": "True",
+      "test": "kruskal_wallis",
+      "reason": "multi_group_non_parametric_comparison",
+      "n_groups": 4
+    }
+  },
+  "pct_reconstructed": {
+    "metric": "pct_reconstructed",
+    "methods": {
+      "full_rollback": {
+        "mean": 100.0,
+        "median": 100.0,
+        "std": 0.0,
+        "min": 100.0,
+        "max": 100.0,
+        "ci_lower": 100.0,
+        "ci_upper": 100.0,
+        "n": 600
+      },
+      "checkpoint": {
+        "mean": 91.36,
+        "median": 100.0,
+        "std": 14.611396,
+        "min": 20.0,
+        "max": 100.0,
+        "ci_lower": 90.188499,
+        "ci_upper": 92.531501,
+        "n": 600
+      },
+      "dependency": {
+        "mean": 88.793333,
+        "median": 95.0,
+        "std": 14.791225,
+        "min": 28.0,
+        "max": 100.0,
+        "ci_lower": 87.607414,
+        "ci_upper": 89.979252,
+        "n": 600
+      },
+      "bcrf": {
+        "mean": 46.455667,
+        "median": 47.8,
+        "std": 9.40847,
+        "min": 12.0,
+        "max": 100.0,
+        "ci_lower": 45.701322,
+        "ci_upper": 47.210011,
+        "n": 600
+      }
+    },
+    "pairwise_tests": {
+      "bcrf_vs_full_rollback": {
+        "welch_t": {
+          "statistic": -139.402369,
+          "p_value": 0.0,
+          "significant": "True",
+          "test": "welch_t",
+          "reason": "two_independent_samples_potentially_unequal_variance"
+        },
+        "mann_whitney": {
+          "statistic": 3600.0,
+          "p_value": 0.0,
+          "significant": "True",
+          "test": "mann_whitney",
+          "reason": "non_parametric_two_sample_comparison"
+        },
+        "cohens_d": -8.0484
+      },
+      "bcrf_vs_checkpoint": {
+        "welch_t": {
+          "statistic": -63.292412,
+          "p_value": 0.0,
+          "significant": "True",
+          "test": "welch_t",
+          "reason": "two_independent_samples_potentially_unequal_variance"
+        },
+        "mann_whitney": {
+          "statistic": 9690.0,
+          "p_value": 0.0,
+          "significant": "True",
+          "test": "mann_whitney",
+          "reason": "non_parametric_two_sample_comparison"
+        },
+        "cohens_d": -3.654189
+      },
+      "bcrf_vs_dependency": {
+        "welch_t": {
+          "statistic": -59.159096,
+          "p_value": 0.0,
+          "significant": "True",
+          "test": "welch_t",
+          "reason": "two_independent_samples_potentially_unequal_variance"
+        },
+        "mann_whitney": {
+          "statistic": 16780.0,
+          "p_value": 0.0,
+          "significant": "True",
+          "test": "mann_whitney",
+          "reason": "non_parametric_two_sample_comparison"
+        },
+        "cohens_d": -3.415552
+      }
+    },
+    "kruskal_wallis": {
+      "statistic": 1741.143724,
+      "p_value": 0.0,
+      "significant": "True",
+      "test": "kruskal_wallis",
+      "reason": "multi_group_non_parametric_comparison",
+      "n_groups": 4
+    }
+  },
+  "duplicate_side_effects": {
+    "metric": "duplicate_side_effects",
+    "methods": {
+      "full_rollback": {
+        "mean": 36.45,
+        "median": 17.0,
+        "std": 40.74573,
+        "min": 3.0,
+        "max": 165.0,
+        "ci_lower": 33.183122,
+        "ci_upper": 39.716878,
+        "n": 600
+      },
+      "checkpoint": {
+        "mean": 35.25,
+        "median": 15.0,
+        "std": 40.448374,
+        "min": 1.0,
+        "max": 165.0,
+        "ci_lower": 32.006963,
+        "ci_upper": 38.493037,
+        "n": 600
+      },
+      "dependency": {
+        "mean": 34.6,
+        "median": 15.0,
+        "std": 40.53857,
+        "min": 0.0,
+        "max": 165.0,
+        "ci_lower": 31.349731,
+        "ci_upper": 37.850269,
+        "n": 600
+      },
+      "bcrf": {
+        "mean": 0.0,
+        "median": 0.0,
+        "std": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "ci_lower": 0.0,
+        "ci_upper": 0.0,
+        "n": 600
+      }
+    },
+    "pairwise_tests": {
+      "bcrf_vs_full_rollback": {
+        "welch_t": {
+          "statistic": -21.912456,
+          "p_value": 0.0,
+          "significant": "True",
+          "test": "welch_t",
+          "reason": "two_independent_samples_potentially_unequal_variance"
+        },
+        "mann_whitney": {
+          "statistic": 0.0,
+          "p_value": 0.0,
+          "significant": "True",
+          "test": "mann_whitney",
+          "reason": "non_parametric_two_sample_comparison"
+        },
+        "cohens_d": -1.265116
+      },
+      "bcrf_vs_checkpoint": {
+        "welch_t": {
+          "statistic": -21.346844,
+          "p_value": 0.0,
+          "significant": "True",
+          "test": "welch_t",
+          "reason": "two_independent_samples_potentially_unequal_variance"
+        },
+        "mann_whitney": {
+          "statistic": 0.0,
+          "p_value": 0.0,
+          "significant": "True",
+          "test": "mann_whitney",
+          "reason": "non_parametric_two_sample_comparison"
+        },
+        "cohens_d": -1.232461
+      },
+      "bcrf_vs_dependency": {
+        "welch_t": {
+          "statistic": -20.906595,
+          "p_value": 0.0,
+          "significant": "True",
+          "test": "welch_t",
+          "reason": "two_independent_samples_potentially_unequal_variance"
+        },
+        "mann_whitney": {
+          "statistic": 2700.0,
+          "p_value": 0.0,
+          "significant": "True",
+          "test": "mann_whitney",
+          "reason": "non_parametric_two_sample_comparison"
+        },
+        "cohens_d": -1.207043
+      }
+    },
+    "kruskal_wallis": {
+      "statistic": 1364.607332,
+      "p_value": 0.0,
+      "significant": "True",
+      "test": "kruskal_wallis",
+      "reason": "multi_group_non_parametric_comparison",
+      "n_groups": 4
+    }
+  },
+  "civ_score": {
+    "metric": "civ_score",
+    "methods": {
+      "full_rollback": {
+        "mean": 1.0,
+        "median": 1.0,
+        "std": 0.0,
+        "min": 1.0,
+        "max": 1.0,
+        "ci_lower": 1.0,
+        "ci_upper": 1.0,
+        "n": 600
+      },
+      "checkpoint": {
+        "mean": 1.0,
+        "median": 1.0,
+        "std": 0.0,
+        "min": 1.0,
+        "max": 1.0,
+        "ci_lower": 1.0,
+        "ci_upper": 1.0,
+        "n": 600
+      },
+      "dependency": {
+        "mean": 1.0,
+        "median": 1.0,
+        "std": 0.0,
+        "min": 1.0,
+        "max": 1.0,
+        "ci_lower": 1.0,
+        "ci_upper": 1.0,
+        "n": 600
+      },
+      "bcrf": {
+        "mean": 0.896059,
+        "median": 0.895,
+        "std": 0.002645,
+        "min": 0.895,
+        "max": 0.9125,
+        "ci_lower": 0.895847,
+        "ci_upper": 0.896271,
+        "n": 600
+      }
+    },
+    "pairwise_tests": {
+      "bcrf_vs_full_rollback": {
+        "welch_t": {
+          "statistic": -962.479534,
+          "p_value": 0.0,
+          "significant": "True",
+          "test": "welch_t",
+          "reason": "two_independent_samples_potentially_unequal_variance"
+        },
+        "mann_whitney": {
+          "statistic": 0.0,
+          "p_value": 0.0,
+          "significant": "True",
+          "test": "mann_whitney",
+          "reason": "non_parametric_two_sample_comparison"
+        },
+        "cohens_d": -55.568782
+      },
+      "bcrf_vs_checkpoint": {
+        "welch_t": {
+          "statistic": -962.479534,
+          "p_value": 0.0,
+          "significant": "True",
+          "test": "welch_t",
+          "reason": "two_independent_samples_potentially_unequal_variance"
+        },
+        "mann_whitney": {
+          "statistic": 0.0,
+          "p_value": 0.0,
+          "significant": "True",
+          "test": "mann_whitney",
+          "reason": "non_parametric_two_sample_comparison"
+        },
+        "cohens_d": -55.568782
+      },
+      "bcrf_vs_dependency": {
+        "welch_t": {
+          "statistic": -962.479534,
+          "p_value": 0.0,
+          "significant": "True",
+          "test": "welch_t",
+          "reason": "two_independent_samples_potentially_unequal_variance"
+        },
+        "mann_whitney": {
+          "statistic": 0.0,
+          "p_value": 0.0,
+          "significant": "True",
+          "test": "mann_whitney",
+          "reason": "non_parametric_two_sample_comparison"
+        },
+        "cohens_d": -55.568782
+      }
+    },
+    "kruskal_wallis": {
+      "statistic": 2358.79833,
+      "p_value": 0.0,
+      "significant": "True",
+      "test": "kruskal_wallis",
+      "reason": "multi_group_non_parametric_comparison",
+      "n_groups": 4
+    }
+  },
+  "success": {
+    "metric": "success",
+    "methods": {
+      "full_rollback": {
+        "mean": 1.0,
+        "median": 1.0,
+        "std": 0.0,
+        "min": 1.0,
+        "max": 1.0,
+        "ci_lower": 1.0,
+        "ci_upper": 1.0,
+        "n": 600
+      },
+      "checkpoint": {
+        "mean": 1.0,
+        "median": 1.0,
+        "std": 0.0,
+        "min": 1.0,
+        "max": 1.0,
+        "ci_lower": 1.0,
+        "ci_upper": 1.0,
+        "n": 600
+      },
+      "dependency": {
+        "mean": 1.0,
+        "median": 1.0,
+        "std": 0.0,
+        "min": 1.0,
+        "max": 1.0,
+        "ci_lower": 1.0,
+        "ci_upper": 1.0,
+        "n": 600
+      },
+      "bcrf": {
+        "mean": 1.0,
+        "median": 1.0,
+        "std": 0.0,
+        "min": 1.0,
+        "max": 1.0,
+        "ci_lower": 1.0,
+        "ci_upper": 1.0,
+        "n": 600
+      }
+    },
+    "pairwise_tests": {
+      "bcrf_vs_full_rollback": {
+        "welch_t": {
+          "statistic": NaN,
+          "p_value": NaN,
+          "significant": "False",
+          "test": "welch_t",
+          "reason": "two_independent_samples_potentially_unequal_variance"
+        },
+        "mann_whitney": {
+          "statistic": 180000.0,
+          "p_value": 1.0,
+          "significant": "False",
+          "test": "mann_whitney",
+          "reason": "non_parametric_two_sample_comparison"
+        },
+        "cohens_d": 0.0
+      },
+      "bcrf_vs_checkpoint": {
+        "welch_t": {
+          "statistic": NaN,
+          "p_value": NaN,
+          "significant": "False",
+          "test": "welch_t",
+          "reason": "two_independent_samples_potentially_unequal_variance"
+        },
+        "mann_whitney": {
+          "statistic": 180000.0,
+          "p_value": 1.0,
+          "significant": "False",
+          "test": "mann_whitney",
+          "reason": "non_parametric_two_sample_comparison"
+        },
+        "cohens_d": 0.0
+      },
+      "bcrf_vs_dependency": {
+        "welch_t": {
+          "statistic": NaN,
+          "p_value": NaN,
+          "significant": "False",
+          "test": "welch_t",
+          "reason": "two_independent_samples_potentially_unequal_variance"
+        },
+        "mann_whitney": {
+          "statistic": 180000.0,
+          "p_value": 1.0,
+          "significant": "False",
+          "test": "mann_whitney",
+          "reason": "non_parametric_two_sample_comparison"
+        },
+        "cohens_d": 0.0
+      }
+    },
+    "kruskal_wallis": {
+      "statistic": 0.0,
+      "p_value": 1.0,
+      "significant": false,
+      "test": "kruskal_wallis",
+      "reason": "identical_values: All numbers are identical in kruskal",
+      "n_groups": 4
+    }
+  }
+}
